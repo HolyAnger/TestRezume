@@ -1,0 +1,18 @@
+body {
+	background: url(../images/h1-bg.jpg) no-repeat;
+}
+h2 {
+	text-align:center;
+	color:#fff;
+	text-shadow: 1px 1px .5px black;
+}
+#registr {
+	margin-top:20%;
+}
+form {
+	color:white;
+	
+}
+#back {
+	color:white;
+}

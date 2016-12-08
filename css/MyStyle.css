@@ -1,0 +1,303 @@
+header {
+	background: url(../images/h1-bg.jpg) no-repeat;
+	max-height:895px;
+	width:100%;
+	position:relative;
+}
+footer {
+	background-color:#E3E2D0;
+	width:100%;
+	height:auto;
+	font-size:22px;
+}
+#footer {
+	margin-top:30px;
+	float:left;
+}
+#link {
+	float:right;
+	
+}
+#link li{
+	display:inline-block;
+	margin-top:20px;
+	width:42px;
+	height:42px;
+	border-radius:25px;
+	background:url(../images/icons.png) no-repeat;
+}
+#link li:nth-child(1){
+	background-position: -26px -20px;
+}
+#link li:nth-child(2){
+	background-position: -84px -20px;
+}
+#link li:nth-child(3){
+	background-position: -200px -20px;
+}
+#link li:hover {
+	background:url(../images/hover-icons.png) no-repeat;
+	border-radius:10px;
+}
+#link li:nth-child(1):hover{
+	background-position:-228px -112px;
+}
+#link li:nth-child(2):hover{
+	background-position:-426px -112px;
+}
+#link li:nth-child(3):hover{
+	background-position:-127px -112px;
+}
+#link li a {
+	width:100%;
+	height:100%;
+	display:block;
+}
+  h1{
+	  margin:0 auto;
+	font-size:150px;
+	color:#E4DCFF;
+	display:block;
+	max-width:760px;
+
+}
+
+#log {
+	float:right;
+	margin-top:16px;
+	cursor:pointer;
+}
+
+@keyframes slider {
+  0% {
+    opacity: 0;
+    transform: translate3d(-800px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.slider img {
+	width:100%;
+}
+.slider{
+		margin-top:10px;
+		width:100%;
+		max-height:575px;
+		animation: slider 1s linear 0s 1;
+	
+}
+nav {
+		background-color: #002e48;
+		z-index:100;
+		max-width:100%;
+		
+}
+.menu {
+	height:60px;
+	font-family:Florence, cursive;
+	font-size:30px;
+	max-width:619px;
+	margin: 0 auto;
+}
+.menu ul {
+	padding:0;
+	list-style-type:none;
+	
+}
+.menu li {
+	float:left;
+	padding:0 26px;
+	transition: background 0.3s;
+
+	
+	
+}
+
+.menu a{
+	color:#fff;
+	line-height: 60px;
+}
+.container {
+	position: relative;
+}
+.user {
+	color:#fff;
+	font-size:20px;
+	right:0;
+	margin-top:10px;
+	background-color:#002e48;
+	opacity:.8;
+	height:35px;
+	display:inline-block;
+}
+.user p {
+	text-align:left;
+	padding-left:5px;
+	margin:0;
+	display:inline-block;
+}
+
+.exit {
+	height:35px;
+	background-color:#002e48;
+	padding-bottom:9px;
+	padding-top:3px;
+	border:none;
+	outline:none;
+}
+.exit:active {
+	transform: scale(.8,.8);
+	outline:none;
+}
+
+.user:hover {
+	background-color:#002e48;
+	opacity:1;
+}
+.menu li:hover {
+	background: rgba(255,255,255,0.3);
+}
+ .fixed {
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 width:100%;
+ }
+#content {
+	background-color:#E3E2D0;
+}
+
+.product {
+	cursor: pointer;
+	position:relative;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-color:white;
+	transition: box-shadow .5s;
+	overflow:hidden;
+	
+}
+.prod-img{
+		height:582px;
+}
+.info {
+	border-top:2px solid #E3E2D0;
+}
+
+.product:hover {
+
+	box-shadow: 0px 2px 13px gray;
+}
+
+.product:hover  .price{
+	font-weight:bold;
+}
+
+.link_prod {
+	position:absolute;
+	display:block;
+	height:100%;
+	width:100%;
+}
+.shadow {
+  -webkit-box-shadow: 0px 7px 17px -2px rgba(117,117,117,1);
+   -moz-box-shadow: 0px 7px 17px -2px rgba(117,117,117,1);
+   box-shadow: 0px 7px 17px -2px rgba(117,117,117,1);
+}
+
+.first_word {
+	font-weight:bold;
+}
+#about {
+	color:white;
+	background: -webkit-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: -o-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: -ms-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	font-size:28px;
+}
+#list {
+	font: bold italic 40px serif;
+	height:145px;
+}
+.musicant-list  {
+	float:right;
+	list-style-type: none;
+	margin:0;
+	margin-right:100px;
+}
+#popup {
+	display:none;
+	width:500px;
+	height:700px;
+	background:red;
+	position:absolute;
+	z-index:999;
+	top:50%;
+	left:50%;
+}
+
+#hover {
+	display:none;
+	width:100%;
+	height:100%;
+	background:#aaa;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:998;
+}
+#contacts {
+	margin-top:1px;
+	color:white;
+	background: -webkit-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: -o-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: -ms-linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	background: linear-gradient(10deg, rgb(0, 46, 73) 50%, rgb(0, 72, 118) 100%);
+	font-size:22px;
+	padding-bottom:15px;
+}
+#contacts iframe{
+	width:100%; 
+	height:450px;
+}
+	.cont_info {
+		margin-top:50px;
+		margin-left:50px;
+		width:100%;
+	}
+@media (max-width: 600px){
+	h1{
+		font-size: 42px;
+	}
+#contacts iframe{
+	width:100%; 
+	height:450px;
+}
+#cont_about, h2, .musicant-list, .cont_info{
+	font-size:20px;
+}
+nav {
+	height:180px;
+}
+	.menu {
+	height:60px;
+	font-family:Florence, cursive;
+	font-size:25px;
+	}
+	
+	.menu li {
+		width:100%;
+	}
+	.menu li a {
+		padding-left:25%;
+	}
+	#link{
+		float:none;
+	}
+}
