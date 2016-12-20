@@ -25,11 +25,12 @@ header{
 nav {
     display: inline-block;
     float: right;
-    margin-top: 25px;
+    margin-top: 21px;
 }
 
 nav ul {
         list-style-type: none;
+    padding-left: 0;
     }
 
 nav ul li{
@@ -41,6 +42,9 @@ nav ul li{
     transition: opacity .4s ease 0s;
 }
 
+nav ul li:first-child{
+    padding-left: 0;
+}
 nav ul li:last-child{
     padding-right: 60px;
 }
@@ -82,17 +86,18 @@ nav ul li:last-child{
     height:100%;
     width:101%;
     -webkit-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 #myImage{
 	position:absolute;
-	animation: left 1s linear;
+	animation: left .9s linear;
 }
 #myInfo{
     background-color: #F1F1F1;
 	position:absolute;
 	right:0;
-	animation: right 1s linear;
+	animation: right .9s linear;
 }
 @keyframes left{
 	from{
@@ -102,10 +107,20 @@ nav ul li:last-child{
 	
 	to{
 		opacity:1;
-		left:0%;
+		left:0;
 	}
 }
+@-o-keyframes left{
+    from{
+        opacity:0;
+        left:-10%;
+    }
 
+    to{
+        opacity:1;
+        left:0;
+    }
+}
 @keyframes right{
 	from{
 		opacity:0;
@@ -114,13 +129,23 @@ nav ul li:last-child{
 	
 	to{
 		opacity:1;
-		right:0%;
+		right:0;
 	}
 }
+@-o-keyframes right{
+    from{
+        opacity:0;
+        right:-10%;
+    }
 
+    to{
+        opacity:1;
+        right:0;
+    }
+}
 @keyframes height{
 	from{
-		height:0px;
+		height: 30px;
 		opacity:0;
 	}
 	
@@ -128,6 +153,17 @@ nav ul li:last-child{
 		height:80px;
 		opacity:1;
 	}
+}
+@-o-keyframes height{
+    from{
+        height:30px;
+        opacity:0;
+    }
+
+    to{
+        height:80px;
+        opacity:1;
+    }
 }
 #information{
     width:60%;
@@ -148,8 +184,12 @@ nav ul li:last-child{
     height:80px;
     width:1010px;
     background-color: #102752;
-    margin:0 auto;
-	animation: height 1s linear;
+	animation: height .9s linear;
+    position:absolute;
+    top:0;
+    margin-top: 20px;
+
+
 
 }
 
@@ -184,8 +224,14 @@ nav ul li:last-child{
     height:100%;
     width:100%;
 }
-
+.container_link{
+    max-width: 1010px;
+    height:80px;
+    margin:0 auto;
+    position:relative;
+}
 #greetings{
+    margin-top: -21px;
     background-color: #F1F1F1;
     height:300px;
 }
