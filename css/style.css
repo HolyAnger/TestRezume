@@ -84,7 +84,7 @@ nav ul li:last-child{
 
 #myImage img{
     height:100%;
-    width:101%;
+    width:100%;
     -webkit-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
