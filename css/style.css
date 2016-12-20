@@ -81,13 +81,13 @@ nav ul li:last-child{
 }
 #myImage{
 	position:absolute;
-	animation: left .9s linear;
+	animation: left .9s .1s linear;
 }
 #myInfo{
     background-color: #F1F1F1;
 	position:absolute;
 	right:0;
-	animation: right .9s linear;
+	animation: right .9s .1s linear;
 }
 @keyframes left{
 	from{
@@ -174,7 +174,7 @@ nav ul li:last-child{
     height:80px;
     width:1010px;
     background-color: #102752;
-	animation: height .9s linear;
+	animation: height .9s .1s linear;
     position:absolute;
     top:0;
     margin-top: 20px;
