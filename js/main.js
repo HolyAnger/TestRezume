@@ -1,8 +1,7 @@
-/**
- * Created by HolyAnger on 20.12.2016.
- */
 $(document).ready(function() {
-    $('#myImage').css({'animation':'left .9s .1s linear', 'display':'block'});
-    $('#myInfo').css({'animation':'right .9s .1s linear', 'display':'block'});
-    $('#link').css({'animation':'height .9s .1s linear', 'display':'block'});
+    setTimeout(function () {
+        $('#myImage').css({'display':'block', 'animation':'left .9s linear'});
+        $('#myInfo').css({'display':'block', 'animation':'right .9s linear'});
+        $('#link').css({'display':'block', 'animation':'height .9s linear'});
+    }, 150);
 });
