@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
+body{
+    font-family: 'SpaceMono', monospace;
+}
 header{
     width: 100%;
-    height:90px;
+    min-height:90px;
     position: fixed;
     background-color: #fff;
     z-index: 1;
 
 }
 #myName {
-    margin:22px;
-    margin-left: 35px;
+    margin:22px 0 22px 35px;
     letter-spacing: 2px;
-    font-family: 'Space Mono', monospace;
     font-size: 30px;
     color:#232C5B;
     display: inline-block;
     transition: opacity .4s ease 0s;
+    width:40%;
 
 }
 #myName:hover, nav ul li:hover {
@@ -24,8 +26,10 @@ header{
 
 nav {
     display: inline-block;
+    width:40%;
     float: right;
     margin-top: 21px;
+    text-align: right;
 }
 
 nav ul {
@@ -38,7 +42,6 @@ nav ul li{
     text-transform: uppercase;
     color: #474E76;
     padding: 0 25px;
-    font-family: 'Space Mono', monospace;
     transition: opacity .4s ease 0s;
 }
 
@@ -52,9 +55,8 @@ nav ul li:last-child{
 #background{
     width:100%;
     height:680px;
-    background: scroll url(../images/background.jpg) no-repeat;
+    background: scroll url(../images/background.jpg) no-repeat top;
     background-size: 100% 700px;
-    background-position: top;
     position: relative;
     overflow: hidden;
 }
@@ -160,7 +162,6 @@ nav ul li:last-child{
 #information{
     width:60%;
     margin:20% auto;
-    font-family: 'SpaceMono', monospace;
     color: #182153;
 }
 
@@ -179,7 +180,6 @@ nav ul li:last-child{
 	display: none;
     position:absolute;
     top:0;
-    margin-top: 20px;
 }
 
 #link ul, ul li{
@@ -215,25 +215,21 @@ nav ul li:last-child{
 }
 .container_link{
     max-width: 1010px;
-    height:100px;
+    height:80px;
     margin:0 auto;
     position:relative;
 }
 #greetings{
-    margin-top: -21px;
     background-color: #F1F1F1;
-    height:480px;
 }
 
 #greet{
     max-width: 570px;
-    width:570px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'SpaceMono', monospace;
     color:#143A6D;
-    text-align: center;
     margin-top: 60px;
+    padding-bottom: 50px;
 }
 
 #greet p{
@@ -243,4 +239,75 @@ nav ul li:last-child{
 #greet h4{
     font-size: 35px;
     line-height: 70px;
+}
+
+#education{
+    text-align: center;
+    height:400px;
+    width:100%;
+}
+
+#education h2{
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color:#232C5B;
+    height:80px;
+    line-height: 80px;
+    position: relative;
+    border-bottom: 1px solid rgba(112, 128, 144,.4);
+}
+
+
+#sectionedu{
+    width:100%;
+    margin: 0 auto;
+}
+.item{
+    width: 100%;
+    height: 130px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.dateblock{
+    text-align: right;
+    width:48%;
+    float: left;
+    padding-right: 2%;
+}
+
+.about_education{
+    text-align: left;
+    width:48%;
+    float: left;
+    padding-left: 2%;
+}
+.about_education p{
+    width:50%;
+}
+
+.line{
+    position: absolute;
+    left:48%;
+    width:4%;
+    height:100%;
+}
+.line > span{
+    display:block;
+}
+.line_height{
+    height:80%;
+    text-align: center;
+    width:1px;
+    background-color: #474E76;
+    margin-left: 50%;
+}
+.circle{
+    height:10%;
+    width:15px;
+    margin-left: 40%;
+    border-radius: 30%;
+    background-color: #474E76;
 }
