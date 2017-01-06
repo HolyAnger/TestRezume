@@ -381,4 +381,35 @@ header{
         width: 30%;
         position: relative;
     }
+
+    #myImage,#myInfo {
+        display: block;
+        position: static;
+        width:40%;
+        margin:0 ;
+        height:430px;
+    }
+    #myImage{
+        margin-top: 130px;
+    }
+    #myImage img{
+        width:280px;
+        margin-left: 40px;
+        height: 400px;
+    }
+    #information{
+        margin:15px;
+    }
+    #link{
+        display: block;
+        width:100%;
+    }
+    #background{
+        height:940px;
+        background-size: 100% 100%;
+
+    }
+    body{
+        overflow-X: hidden;
+    }
 }
