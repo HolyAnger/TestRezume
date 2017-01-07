@@ -336,6 +336,7 @@ header{
     height: 50px;
     display: none;
     z-index: 999;
+    outline: none;
 }
 
 #close_menu{
@@ -380,7 +381,7 @@ header{
     #myImage,#myInfo {
         display: block;
         position: static;
-        width:100%;
+        max-width:480px;
         margin:0 ;
         height:430px;
     }
@@ -390,7 +391,8 @@ header{
     #myImage img{
         width:300px;
         height: 400px;
-        margin:auto;
+        margin-left: 5px;
+
 
     }
     #information{
