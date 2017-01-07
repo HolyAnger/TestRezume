@@ -368,11 +368,9 @@ header{
     }
 
     body{
-        overflow-x: hidden;
+        max-width: 480px;
     }
-    @viewport {
-        user-zoom: fixed;
-    }
+
     #main_nav {
         border-bottom: 0;
     }
@@ -391,9 +389,9 @@ header{
     #myImage,#myInfo {
         display: block;
         position: static;
-        max-width:480px;
+        max-width:100%;
         margin:0 ;
-        height:430px;
+        height:405px;
     }
     #myImage{
         margin-top: 130px;
@@ -401,7 +399,6 @@ header{
     #myImage img{
         width:300px;
         height: 400px;
-        margin-left: 10px;
 
 
     }
@@ -411,10 +408,16 @@ header{
     }
     #link{
         display: block;
-        width:100%;
+        max-width:100%;
     }
+    #link ul{
+        max-width:100%;
+        padding:0;
+    }
+
     #myCart{
-        height:780px;
+        height:790px;
+        width: 100%;
         background-size: 100% 100%;
     }
 
