@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono');
 body{
     font: 100%/1.5em 'SpaceMono', monospace;
+    background: scroll url(../images/background.jpg) no-repeat top;
+    background-size: 100% 700px;
 }
 .fixed {
     position:fixed;
@@ -59,20 +61,13 @@ header{
     padding-right: 60px;
 }
 
-#background{
-    width:100%;
-    height:680px;
-    background: scroll url(../images/background.jpg) no-repeat top;
-    background-size: 100% 700px;
-    position: relative;
-    overflow: hidden;
-}
 
 #myCart{
     position: relative;
     width:1010px;
     height:680px;
     margin: 0 auto;
+
 }
 
 #myImage,#myInfo {
@@ -385,7 +380,7 @@ header{
     #myImage,#myInfo {
         display: block;
         position: static;
-        width:40%;
+        width:100%;
         margin:0 ;
         height:430px;
     }
@@ -393,22 +388,27 @@ header{
         margin-top: 130px;
     }
     #myImage img{
-        width:280px;
-        margin-left: 40px;
+        width:300px;
         height: 400px;
+        margin:auto;
+
     }
     #information{
         margin:15px;
+
     }
     #link{
         display: block;
         width:100%;
     }
-    #background{
-        height:940px;
+    #myCart{
+        height:780px;
         background-size: 100% 100%;
-
     }
+    header{
+        top:0;
+    }
+
     body{
         overflow-X: hidden;
     }
