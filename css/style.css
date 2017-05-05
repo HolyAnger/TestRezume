@@ -399,6 +399,7 @@ header{
     }
     #myImage{
         margin-top: 130px;
+		text-align: center;
     }
     #myImage img{
         max-width:300px;
@@ -408,6 +409,7 @@ header{
     }
     #information{
         margin:15%;
+		margin-top:1%;
     }
     #link{
         display: block;
@@ -416,7 +418,11 @@ header{
     #link ul{
         max-width:100%;
         padding:0;
+		text-align: center;
     }
+	#link ul li {
+		width:75px;
+	}
 
     #myCart{
         height:790px;
